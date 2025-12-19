@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Interactive map of Nepal featuring all 7 provinces with hover effects and detailed information">
+    <title>Nepal Interactive Map | All 7 Provinces</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-decoration"></div>
+
+    <header class="header">
+        <h1>🇳🇵 Nepal</h1>
+        <p class="subtitle">Explore all 7 provinces interactively</p>
+    </header>
+
+    <main class="main-content">
+        <div class="map-wrapper">
+            <div class="map-header">
+                <button class="back-btn" id="backBtn" onclick="goBack()" title="Go Back (Esc)">
+                    ← Back
+                </button>
+                <nav class="breadcrumb" id="breadcrumb">
+                    <span class="breadcrumb-item">🇳🇵 Nepal</span>
+                </nav>
+            </div>
+            <div class="map-container" id="mapContainer">
+                <svg id="nepalMap" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
+                    <!-- Map will be rendered here -->
+                </svg>
+                <div class="loading-overlay" id="loadingOverlay">
+                    <div class="loader"></div>
+                    <p>Loading map data...</p>
+                </div>
+            </div>
+        </div>
+
+        <aside class="info-panel" id="infoPanel">
+            <div class="default-info">
+                <h2>🏔️ Hover over a province</h2>
+                <p>Click or hover on any province to see detailed information</p>
+                <div class="legend">
+                    <h3>Provinces</h3>
+                    <ul class="legend-list" id="legendList">
+                        <!-- Legend items will be populated by JS -->
+                    </ul>
+                </div>
+            </div>
+            <div class="province-info hidden" id="provinceInfo">
+                <div class="province-header">
+                    <span class="province-number" id="provinceNumber"></span>
+                    <h2 id="provinceName">Province Name</h2>
+                </div>
+                <div class="province-stats">
+                    <div class="stat-card">
+                        <span class="stat-icon">🏛️</span>
+                        <span class="stat-label">Districts</span>
+                        <span class="stat-value" id="districtCount">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon">🏘️</span>
+                        <span class="stat-label">Local Units</span>
+                        <span class="stat-value" id="localUnits">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon">📍</span>
+                        <span class="stat-label">Total Wards</span>
+                        <span class="stat-value" id="totalWards">0</span>
+                    </div>
+                </div>
+                <div class="districts-list">
+                    <h3>Districts</h3>
+                    <div class="districts-grid" id="districtsGrid">
+                        <!-- Districts will be populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <p>Data source: <a href="https://www.nepal.gov.np/" target="_blank" rel="noopener">Government of Nepal</a></p>
+    </footer>
+
+    <script src="map-logic.js"></script>
+    <script src="map-renderer.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
