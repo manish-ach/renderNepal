@@ -12,7 +12,8 @@ An interactive, high-fidelity SVG map of Nepal featuring drill-down navigation f
 ## Quick Start
 1. Ensure the `Nepal-GEOJSON/` folder is present with `province1.geojson` through `province7.geojson`.
 2. Open `index.html` in any modern web browser.
-3. Use a local server (like Live Server or `python -m http.server`) for the best experience with GeoJSON fetching.
+3. Use a local server, for eg: run `python -m http.server` for the best experience with GeoJSON fetching.
+4. Then go to `http://[::]:8000/`
 
 ## Screenshots
 
