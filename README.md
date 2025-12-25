@@ -14,6 +14,15 @@ An interactive, high-fidelity SVG map of Nepal featuring drill-down navigation f
 2. Open `index.html` in any modern web browser.
 3. Use a local server (like Live Server or `python -m http.server`) for the best experience with GeoJSON fetching.
 
+## Screenshots
+
+<img width="1463" height="816" alt="image" src="https://github.com/user-attachments/assets/cfb0c33e-cecf-4773-bb0e-2fcf88bb173b" />
+
+<img width="1463" height="816" alt="image" src="https://github.com/user-attachments/assets/a9116dce-062a-4553-a285-f19624b7541c" />
+
+<img width="1463" height="816" alt="image" src="https://github.com/user-attachments/assets/d69cc55c-7f6c-4ccd-bbe4-98935814fc21" />
+
+
 ## Documentation
 For a deep dive into the code architecture, logic, and function references, please see:
 👉 **[DOCUMENTATION.md](./DOCUMENTATION.md)**
