@@ -2,6 +2,8 @@
 
 An interactive, high-fidelity SVG map of Nepal featuring drill-down navigation from the national level to individual districts.
 
+data used from : [dataofsandy/Nepal-GEOJSON](https://github.com/dataofsandy/Nepal-GEOJSON)
+
 ## Features
 - 🇳🇵 **Drill-down Navigation**: Explore Country -> Province -> District.
 - 🖐️ **Draggable Canvas**: Pan across the map with ease.
